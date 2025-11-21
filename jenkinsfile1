@@ -5,11 +5,7 @@ pipeline {
         nodejs 'nodejs25'
     }
     stages {
-        stage ("clean workspace") {
-            steps {
-                cleanWs()
-            }
-        }
+       
         stage ("Git Checkout") {
             steps {
                 git 'https://github.com/AnchalMishra0412/Zomato.git'
