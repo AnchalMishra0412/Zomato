@@ -23,7 +23,7 @@ stage ("Tag & Push to DockerHub") {
                 script {
                     withCredentials([usernamePassword(credentialsId: 'docker-login', passwordVariable: 'dockerhubpass', usernameVariable: 'dockerhublogin')]){
                         sh 'docker login -u ${dockerhublogin} -p ${dockerhubpass}'
-                        sh "docker push kastrov/zomato:latest "
+                        sh "docker push anchalmishra04/zomatoapp:1.0 "
                     }
                 }
             }
