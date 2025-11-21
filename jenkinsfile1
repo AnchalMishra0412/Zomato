@@ -3,13 +3,14 @@ pipeline {
     tools {
         jdk 'JAVA_HOME'
         nodejs 'nodejs25'
-    }
+          }
     stages {
        
-        stage ("Git Checkout") {
+        stage ("Git Checkout") 
+          {
             steps {
                 git 'https://github.com/AnchalMishra0412/Zomato.git'
-            }
-        }
-  }
+                  }
+           }
+          }
 }
